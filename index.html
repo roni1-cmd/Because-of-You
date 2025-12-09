@@ -77,15 +77,19 @@
       transform: rotateY(-180deg);
     }
 
-    /* Updated z-index for 8 pages */
-    .page-1 { z-index: 8; }
-    .page-2 { z-index: 7; }
-    .page-3 { z-index: 6; }
-    .page-4 { z-index: 5; }
-    .page-5 { z-index: 4; }
-    .page-6 { z-index: 3; }
-    .page-7 { z-index: 2; }
-    .page-8 { z-index: 1; }
+    /* Updated z-index for 12 pages */
+    .page-1 { z-index: 12; }
+    .page-2 { z-index: 11; }
+    .page-3 { z-index: 10; }
+    .page-4 { z-index: 9; }
+    .page-5 { z-index: 8; }
+    .page-6 { z-index: 7; }
+    .page-7 { z-index: 6; }
+    .page-8 { z-index: 5; }
+    .page-9 { z-index: 4; }
+    .page-10 { z-index: 3; }
+    .page-11 { z-index: 2; }
+    .page-12 { z-index: 1; }
 
     .page-1.flipped { z-index: 1; }
     .page-2.flipped { z-index: 2; }
@@ -95,6 +99,10 @@
     .page-6.flipped { z-index: 6; }
     .page-7.flipped { z-index: 7; }
     .page-8.flipped { z-index: 8; }
+    .page-9.flipped { z-index: 9; }
+    .page-10.flipped { z-index: 10; }
+    .page-11.flipped { z-index: 11; }
+    .page-12.flipped { z-index: 12; }
 
     /* Removed padding from page-content, added to text-content only */
     .text-content {
@@ -276,6 +284,48 @@
       font-size: 1.2rem;
     }
 
+    /* Added ending page styles */
+    .ending-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100%;
+      text-align: center;
+      padding: 60px 40px;
+    }
+
+    .ending-ornament {
+      color: #d4a855;
+      font-size: 3rem;
+      margin-bottom: 40px;
+    }
+
+    .ending-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      color: #3d2817;
+      margin-bottom: 30px;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+    }
+
+    .ending-message {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: #5c4934;
+      font-style: italic;
+      max-width: 500px;
+      line-height: 1.8;
+      margin-bottom: 50px;
+    }
+
+    .ending-flourish {
+      color: #c9a96e;
+      font-size: 2rem;
+      letter-spacing: 10px;
+    }
+
     /* Navigation */
     .nav-hint {
       position: fixed;
@@ -380,6 +430,16 @@
         font-size: 0.8rem;
         padding: 8px 18px;
       }
+
+      /* Ending page responsive */
+      .ending-title {
+        font-size: 2.5rem;
+        letter-spacing: 5px;
+      }
+
+      .ending-message {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
@@ -469,7 +529,7 @@
         </div>
       </div>
 
-      <!-- Page 6: Chapter 4 - New chapter about memories -->
+      <!-- Page 6: Chapter 4 -->
       <div class="page page-6" data-page="6">
         <div class="page-content">
           <img src="/2fbecbd549f7cb701fdfe5bcbd4b6ba4.jpg" alt="Ocean sunset" class="chapter-photo">
@@ -478,17 +538,17 @@
             <h2 class="chapter-name">The Distance Between Us</h2>
             <div class="divider"></div>
             <div class="chapter-text">
-              <p><span class="drop-cap">W</span>e don’t get the luxury of shared space. No casual touches. No spontaneous moments where I can just look at you and know everything is okay. There are days when that absence is loud, when it sits with me and reminds me that wanting someone doesn’t automatically mean having them. The distance is real, and pretending otherwise would be dishonest.</p>
-              <p>There are moments I wish I could show you things instead of describing them. Times when I wish I could sit beside you instead of imagining you somewhere else, living in a different place, under a different sky. Sometimes it’s frustrating how close you feel and how far you actually are. That contrast can be exhausting.</p>
-              <p>But even with all that space between us, you’re present in my life in ways that surprise me. You show up in my thoughts throughout the day. I catch myself wanting to tell you things immediately, even before I realize how automatic that impulse has become. Distance hasn’t muted you. It’s sharpened you.</p>
-              <p>If anything, being apart has made me more aware of what you mean to me. I don’t take your attention lightly. I don’t take your time for granted. When someone matters to you from far away, you feel it clearly, without confusion or convenience masking the truth.</p> 
+              <p><span class="drop-cap">W</span>e don't get the luxury of shared space. No casual touches. No spontaneous moments where I can just look at you and know everything is okay. There are days when that absence is loud, when it sits with me and reminds me that wanting someone doesn't automatically mean having them. The distance is real, and pretending otherwise would be dishonest.</p>
+              <p>There are moments I wish I could show you things instead of describing them. Times when I wish I could sit beside you instead of imagining you somewhere else, living in a different place, under a different sky. Sometimes it's frustrating how close you feel and how far you actually are. That contrast can be exhausting.</p>
+              <p>But even with all that space between us, you're present in my life in ways that surprise me. You show up in my thoughts throughout the day. I catch myself wanting to tell you things immediately, even before I realize how automatic that impulse has become. Distance hasn't muted you. It's sharpened you.</p>
+              <p>If anything, being apart has made me more aware of what you mean to me. I don't take your attention lightly. I don't take your time for granted. When someone matters to you from far away, you feel it clearly, without confusion or convenience masking the truth.</p> 
             </div>
             <div class="flourish">✦</div>
           </div>
         </div>
       </div>
 
-      <!-- Page 7: Chapter 5 - New chapter about growth -->
+      <!-- Page 7: Chapter 5 -->
       <div class="page page-7" data-page="7">
         <div class="page-content">
           <img src="/85bd274713cb4507334a1db9e6cda970.jpg" alt="Blooming garden" class="chapter-photo">
@@ -497,17 +557,17 @@
             <h2 class="chapter-name">The Way You Exist in the World</h2>
             <div class="divider"></div>
             <div class="chapter-text">
-              <p><span class="drop-cap">W</span>hat I admire most about you is the way you exist so naturally, as if you don’t need to announce yourself to be felt. You move through the world with a quiet confidence, not loud or demanding, but steady and real. People sense it, even if they don’t know why. I sense it every time you speak, every time you pause to think, every time you choose kindness without making a show of it.</p>
-              <p>You have a depth to you that reveals itself slowly. The more I learn about you, the more I realize there’s always something beneath the surface. You’re thoughtful in ways that matter, observant in ways that feel rare, and intentional without being rigid. You don’t rush through life, and that makes me want to slow down too.</p>
-              <p>Watching how you handle things, even from afar, teaches me more than you probably realize. You face situations with honesty, even when they’re uncomfortable. You don’t pretend to have everything figured out, and that sincerity feels grounding. It reminds me that strength doesn’t have to be loud.</p>
-              <p>What draws me to you isn’t just attraction or affection. It’s respect. You make me admire the kind of person you are, and that admiration only deepens the more I see how you move through the world, how you think, and how you care.</p>
+              <p><span class="drop-cap">W</span>hat I admire most about you is the way you exist so naturally, as if you don't need to announce yourself to be felt. You move through the world with a quiet confidence, not loud or demanding, but steady and real. People sense it, even if they don't know why. I sense it every time you speak, every time you pause to think, every time you choose kindness without making a show of it.</p>
+              <p>You have a depth to you that reveals itself slowly. The more I learn about you, the more I realize there's always something beneath the surface. You're thoughtful in ways that matter, observant in ways that feel rare, and intentional without being rigid. You don't rush through life, and that makes me want to slow down too.</p>
+              <p>Watching how you handle things, even from afar, teaches me more than you probably realize. You face situations with honesty, even when they're uncomfortable. You don't pretend to have everything figured out, and that sincerity feels grounding. It reminds me that strength doesn't have to be loud.</p>
+              <p>What draws me to you isn't just attraction or affection. It's respect. You make me admire the kind of person you are, and that admiration only deepens the more I see how you move through the world, how you think, and how you care.</p>
             </div>
             <div class="flourish">❀</div>
           </div>
         </div>
       </div>
 
-      <!-- Page 8: Chapter 6 - Final chapter with signature and ending -->
+      <!-- Page 8: Chapter 6 -->
       <div class="page page-8" data-page="8">
         <div class="page-content">
           <img src="/606230e40d99538a48988e726e2938ba.jpg" alt="Mountain dawn" class="chapter-photo">
@@ -516,17 +576,86 @@
             <h2 class="chapter-name">The Space You Hold in My Life</h2>
             <div class="divider"></div>
             <div class="chapter-text">
-              <p><span class="drop-cap">Y</span>ou’ve become part of my everyday life in ways that feel effortless and real. You’re there in my thoughts when something good happens and when something goes wrong. I find myself wanting to share experiences with you, even the small ones that seem insignificant at first glance. They matter because you matter.</p>
-              <p>There’s a comfort in knowing you’re part of my life, even if we’re not in the same place. It’s not loud or overwhelming. It’s steady. You make me feel understood without needing constant explanation. Being able to talk to you, to be honest with you, feels natural in a way I don’t take for granted.</p>
-              <p>You don’t crowd my life. You enrich it. You fit into it in a way that feels balanced and grounding. You bring warmth without pressure, closeness without demand. That kind of presence is rare, and I recognize how lucky I am to have it.</p>
-              <p>Some people enter your life briefly and leave little impact. Others stay in ways that reshape you. You’re the latter. You’ve carved out a space in my life that feels secure, meaningful, and deeply appreciated.</p>
-              <p style="font-style: italic; text-align: center; margin: 30px 0;">And never forget: the best chapters of our story are still being written—together.</p>
+              <p><span class="drop-cap">Y</span>ou've become part of my everyday life in ways that feel effortless and real. You're there in my thoughts when something good happens and when something goes wrong. I find myself wanting to share experiences with you, even the small ones that seem insignificant at first glance. They matter because you matter.</p>
+              <p>There's a comfort in knowing you're part of my life, even if we're not in the same place. It's not loud or overwhelming. It's steady. You make me feel understood without needing constant explanation. Being able to talk to you, to be honest with you, feels natural in a way I don't take for granted.</p>
+              <p>You don't crowd my life. You enrich it. You fit into it in a way that feels balanced and grounding. You bring warmth without pressure, closeness without demand. That kind of presence is rare, and I recognize how lucky I am to have it.</p>
+              <p>Some people enter your life briefly and leave little impact. Others stay in ways that reshape you. You're the latter. You've carved out a space in my life that feels secure, meaningful, and deeply appreciated.</p>
+            </div>
+            <div class="flourish">❦</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 9: Chapter 7 - NEW -->
+      <div class="page page-9" data-page="9">
+        <div class="page-content">
+          <img src="1bb43fccf2473b34e37d3b68451a8097.jpg" alt="Golden sunset" class="chapter-photo">
+          <div class="text-content">
+            <p class="chapter-title">Chapter Seven</p>
+            <h2 class="chapter-name">A Love That Was Full</h2>
+            <div class="divider"></div>
+            <div class="chapter-text">
+              <p><span class="drop-cap">W</span>hat we had was real, and I won’t rewrite that just because it didn’t last forever. There was a time when loving you felt natural, easy, and deeply fulfilling. I felt seen in ways I hadn’t before. Being connected to you gave my days structure, meaning, something steady to lean on even when life felt uncertain.</p>
+              <p>You fit into my life without force. Your presence didn’t demand attention, it earned it. Conversations felt honest. Silence felt comfortable. There was a sense that we were building something quietly, without rushing it, without trying to prove it to anyone else. That kind of love doesn’t come around often.</p>
+              <p>I admired the way we chose each other when it would have been easier not to. Even from far apart, we made space. We listened. We showed up. That effort mattered to me. It made everything feel intentional instead of accidental, deliberate instead of convenient.</p>
+              <p>For what it’s worth, I never felt empty loving you. I felt expanded. I felt fuller, more grounded, more alive. And no matter what came after, that part of our story was genuine. I’ll hold that without regret.</p>
+            </div>
+            <div class="flourish">✿</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 10: Chapter 8 - NEW -->
+      <div class="page page-10" data-page="10">
+        <div class="page-content">
+          <img src="15336f6a2faaf5ceafd56f97db70fd46.jpg" alt="Morning light" class="chapter-photo">
+          <div class="text-content">
+            <p class="chapter-title">Chapter Eight</p>
+            <h2 class="chapter-name">When Things Started to Break</h2>
+            <div class="divider"></div>
+            <div class="chapter-text">
+              <p><span class="drop-cap">T</span>he breaking didn’t happen all at once. It came quietly, in pauses where answers used to be, in distance that wasn’t just physical anymore. I felt it before I understood it. Something shifted, and no amount of patience could put it back the way it was.</p>
+              <p>We were still trying, but trying started to feel heavier than it should. Conversations that once flowed became careful. Effort became uneven. I started questioning things I never questioned before, not because I wanted to, but because I had to. Love shouldn’t make you constantly wonder where you stand.</p>
+              <p>I don’t blame either of us for it. Sometimes two people can love each other and still begin to come apart. Timing matters. Capacity matters. Distance matters. And pretending otherwise only stretches something thin until it finally tears.</p>
+              <p>What hurt wasn’t losing you all at once. It was watching the connection loosen while still holding it, knowing something was ending but not ready to let go yet. That in-between space was the hardest part. </p>
+            </div>
+            <div class="flourish">❦</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 11: Chapter 9 - NEW (Final Chapter with signature) -->
+      <div class="page page-11" data-page="11">
+        <div class="page-content">
+          <img src="fc435fe925aabc129fc823ad99008693.jpg" alt="Starry night" class="chapter-photo">
+          <div class="text-content">
+            <p class="chapter-title">Chapter Nine</p>
+            <h2 class="chapter-name">Farewell</h2>
+            <div class="divider"></div>
+            <div class="chapter-text">
+              <p><span class="drop-cap">L</span>etting go doesn’t erase what we were. It just means accepting what we can no longer be. Walking away wasn’t easy, but staying would have meant holding onto something that no longer fit the shape of our lives. And love shouldn’t survive by shrinking.</p>
+              <p>I didn’t leave because I stopped caring. I left because care alone isn’t enough to sustain a future. There has to be alignment, presence, and a shared direction. Without those, love turns into longing, and longing eventually turns into pain.</p>
+              <p>Parting ways doesn’t mean bitterness. It means respect. It means acknowledging that something meaningful existed and also knowing when it’s time to release it. I carry gratitude for what we shared, not resentment for how it ended.</p>
+              <p>I hope we both find what we need, even if it isn’t with each other. What we had mattered. It shaped us. And now it belongs to the part of our lives that taught us how deeply we are capable of feeling, even when the ending isn’t the one we wanted.</p>
+              <p style="font-style: italic; text-align: center; margin: 30px 0;">And never forget: good things are coming for you.</p>
               <p class="signature">
                 Forever Yours,<br>
                 <em>Percy</em>
               </p>
             </div>
-            <div class="ending">✦ To be Continued ✦</div>
+            <div class="flourish">✦ ❦ ✦</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 12: Ending Page - NEW -->
+      <div class="page page-12" data-page="12">
+        <div class="page-content">
+          <div class="ending-content">
+            <div class="ending-ornament">✦ ❦ ✦</div>
+            <h1 class="ending-title">End</h1>
+            <p class="ending-message">I love you, Vyein.</p>
+            <div class="ending-flourish">✦ ✦ ✦</div>
           </div>
         </div>
       </div>
@@ -537,8 +666,8 @@
     <div class="click-next" onclick="nextPage()"></div>
   </div>
 
-  <!-- Updated total pages to 8 -->
-  <div class="page-indicator">Page <span id="currentPage">1</span> of 8</div>
+  <!-- Updated total pages to 12 -->
+  <div class="page-indicator">Page <span id="currentPage">1</span> of 12</div>
   <div class="nav-hint">
     <span class="desktop-hint">← Click edges or use arrow keys →</span>
     <span class="mobile-hint">← Tap edges to turn pages →</span>
@@ -546,7 +675,7 @@
 
   <script>
     let currentPage = 1;
-    const totalPages = 8; // Updated from 5 to 8
+    const totalPages = 12; // Updated from 8 to 12
     const pages = document.querySelectorAll('.page');
 
     function updatePageDisplay() {
